@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity"
+    android:background="@color/mat">
+    <LinearLayout
+        android:id="@+id/header_title"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/beton"
+        tools:ignore="MissingConstraints">
+
+        <ImageButton
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:background="no"
+            android:scrollbarSize="90dp"
+            android:src="@drawable/ic_baseline_format_list_bulleted_24" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_fireplace_24"
+            android:layout_marginHorizontal="90dp"
+            android:layout_marginTop="10dp"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="no"
+            android:src="@drawable/ic_baseline_search_24"
+            android:layout_marginVertical="20dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/polic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Policies"
+        android:textSize="30dp"
+        app:layout_constraintTop_toBottomOf="@id/header_title"
+        tools:layout_editor_absoluteX="160dp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints" />
+    <LinearLayout
+        android:id="@+id/punct"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/polic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="InvalidId">
+        
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:text="Policy"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textAlignment="textStart" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:text="Product Category"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textAlignment="textStart"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:text="Origin Country"
+             android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textAlignment="textStart"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:text="Brand"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textAlignment="textStart"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/current"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Current Policies"
+        android:textSize="35dp"
+        app:layout_constraintTop_toBottomOf="@id/punct"
+        tools:layout_editor_absoluteX="80dp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/red"
+        android:text="Export as SCV"
+        app:layout_constraintTop_toBottomOf="@id/current"
+        app:layout_editor_absoluteX="140dp"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
